@@ -10,12 +10,21 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
 
+        <!-- First activity page -->
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+
+        <!-- Second activity page -->
+        <activity android:name=".SecondActivity">
+        </activity>
+
+        <!--Third activity page-->
+        <activity android:name=".ThirdActivity">
         </activity>
     </application>
 
