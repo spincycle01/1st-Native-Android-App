@@ -4,14 +4,14 @@
 
     <application
             android:allowBackup="true"
-            android:icon="@mipmap/ic_launcher"
+            android:icon="@mipmap/ic_launcher_shareapp"
             android:label="@string/app_name"
-            android:roundIcon="@mipmap/ic_launcher_round"
+            android:roundIcon="@mipmap/ic_launcher_shareapp_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
 
         <!-- First activity page -->
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -20,11 +20,11 @@
         </activity>
 
         <!-- Second activity page -->
-        <activity android:name=".SecondActivity">
+        <activity android:name=".activities.SecondActivity">
         </activity>
 
         <!--Third activity page-->
-        <activity android:name=".ThirdActivity">
+        <activity android:name=".activities.ThirdActivity">
         </activity>
     </application>
 

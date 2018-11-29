@@ -1,6 +1,28 @@
 <resources>
-    <string name="app_name">MsgSharingApp</string>
-    <string name="show_toast">First Message</string>
+    <string name="app_name">Message Sharing</string>
+
+    <!--testing button in logcat text-->
+    <string name="Button_test_in_logcat">Button was clicked !</string>
+
+    <!--top button text-->
+    <string name="show_toast">Print a Message to Screen</string>
+    <string name="print_to_screen">Sharing a Pop-up Message With You</string>
+
+    <!--second and third button text-->
     <string name="enter_your_message">Enter Your Message</string>
-    <string name="send_to_second_activity">Send Data Entered</string>
+    <string name="send_to_second_activity">Send to Next Screen</string>
+    <string name="share_message">Share Message</string>
+    <string name="select_app">Please select app:</string>
+
+    <!--fourth button text, Recycler View-->
+    <string name="send_to_third_activity">Pick and Share a Hobby</string>
+    <string name="select_app_list">Please select app:</string>
+    <string name="my_hobby_is">My hobby is:</string>
+    <string name="clicked">Clicked!  Press Share Button</string>
+
+    <string name="Exercising">Exercising</string>
+    <string name="Reading">Reading</string>
+    <string name="Walking">Walking</string>
+
+
 </resources>

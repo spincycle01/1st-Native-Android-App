@@ -5,19 +5,22 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity" tools:layout_editor_absoluteY="81dp">
+        tools:context=".activities.MainActivity" tools:layout_editor_absoluteY="81dp">
 
-
+    <!--first button for pop up (toast) message-->
     <Button
             android:id="@+id/btnShowToast"
             android:text="@string/show_toast"
             android:layout_width="match_parent"
             android:padding="10dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.0"/>
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.050000012"/>
+
+    <!--Edit text for user message entry-->
     <EditText
             android:id="@+id/etUserMessage"
             android:hint="@string/enter_your_message"
@@ -26,17 +29,54 @@
             android:layout_height="50dp"
             android:inputType="textPersonName"
             android:ems="10"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" android:layout_marginTop="30dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnShowToast" app:layout_constraintHorizontal_bias="0.0"/>
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginTop="30dp" app:layout_constraintTop_toBottomOf="@+id/btnShowToast"/>
+
+    <!--button to send edit text message to second activity-->
     <Button
             android:id="@+id/btnSendMsgToSecondActivity"
             android:text="@string/send_to_second_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/etUserMessage"/>
+
+    <!--button to share message with other apps-->
+    <Button
+            android:id="@+id/btnShareToOtherApps"
+            android:text="@string/share_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/etUserMessage"/>
+
+    <!--button to start recycler view-->
+    <Button
+            android:id="@+id/btnSendMsgToThirdActivity"
+            android:text="@string/send_to_third_activity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:layout_marginTop="6dp" app:layout_constraintTop_toBottomOf="@+id/etUserMessage"
-            app:layout_constraintHorizontal_bias="0.0"/>
+            android:layout_marginTop="100dp" app:layout_constraintTop_toBottomOf="@+id/etUserMessage"/>
+
+    <!--image on the screen-->
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp" app:srcCompat="@android:color/background_light"
+            android:id="@+id/firstImage"
+            android:src="@drawable/letters"
+            app:layout_constraintStart_toEndOf="@+id/btnSendMsgToSecondActivity"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toStartOf="@+id/btnShareToOtherApps"
+            android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnSendMsgToThirdActivity"
+            app:layout_constraintTop_toBottomOf="@+id/etUserMessage"/>
+
+
 </android.support.constraint.ConstraintLayout>
